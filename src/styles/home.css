@@ -1,0 +1,66 @@
+.hero-div{
+  background-image: url(../assets/HeroImg.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  align-self: flex-start;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.contact-link{
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 25px;
+  margin-top: -45px;
+}
+.hunter-hero{
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 40px;
+}
+.hero-text{
+  width: 80vw;
+  margin: 40px 10vw 0 10vw;
+  background-color: #ffffff;
+  border: 1px solid rgb(118, 118, 118);
+  opacity: 0.6;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 30px -12px rgba(0,0,0,.42),
+    0 4px 25px 0px rgba(0,0,0,.12),
+    0 8px 10px -5px rgba(0,0,0,.2)
+}
+.about-me-div{
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  color: white;
+  width: 100%;
+}
+.intro-h1{
+  margin: 0;
+  width: 80%;
+  padding: 40px 10% 0 10%;
+  line-height: 1.6;
+}
+.tech-skills{
+  height: 480px;
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 80;
+  margin: -130px 10vw 0 10vw;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 12px;
+  box-shadow:
+    0 10px 30px -12px rgba(0,0,0,.40),
+    0 4px 25px 0px rgba(0,0,0,.40),
+    0 8px 10px -5px rgba(0,0,0,.40);
+}
