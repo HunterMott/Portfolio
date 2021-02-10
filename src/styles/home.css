@@ -51,7 +51,7 @@
   line-height: 1.6;
 }
 .tech-skills{
-  height: 480px;
+  height: auto;
   background-color: white;
   padding-left: 80px;
   padding-right: 80px;
@@ -63,4 +63,35 @@
     0 10px 30px -12px rgba(0,0,0,.40),
     0 4px 25px 0px rgba(0,0,0,.40),
     0 8px 10px -5px rgba(0,0,0,.40);
+}
+a {
+  /* text-decoration: none; */
+  color: black;
+}
+.project-header{
+  margin-top: 90px;
+}
+.project-img{
+  width: 200px;
+}
+.project-div{
+  text-decoration: none;
+  width: 60;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 25px 25vw 0 25vw;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 12px;
+  box-shadow:
+    0 10px 30px -12px rgba(0,0,0,.40),
+    0 4px 25px 0px rgba(0,0,0,.40),
+    0 8px 10px -5px rgba(0,0,0,.40);
+}
+.project-link{
+  text-decoration: none;
+  width: 60;
+}
+.project-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
