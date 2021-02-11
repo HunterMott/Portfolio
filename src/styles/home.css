@@ -27,8 +27,9 @@
   margin-top: 40px;
 }
 .hero-text{
+  align-self: center;
   width: 80vw;
-  margin: 40px 10vw 0 10vw;
+  margin: 80px 10% 0 10%;
   background-color: #ffffff;
   border: 1px solid rgb(118, 118, 118);
   opacity: 0.6;
@@ -72,20 +73,23 @@ a {
   margin-top: 90px;
 }
 .project-img{
-  width: 200px;
+  width: 300px;
 }
 .project-div{
   text-decoration: none;
-  width: 60;
+  width: 60%;
+  max-width: 400px;
   padding-left: 40px;
   padding-right: 40px;
-  margin: 25px 25vw 0 25vw;
+  margin: 25px 10px 0 10px;
   border: 1px solid rgb(172, 172, 172);
   border-radius: 12px;
   box-shadow:
     0 10px 30px -12px rgba(0,0,0,.40),
     0 4px 25px 0px rgba(0,0,0,.40),
     0 8px 10px -5px rgba(0,0,0,.40);
+  flex-wrap: wrap;
+
 }
 .project-link{
   text-decoration: none;
@@ -93,5 +97,6 @@ a {
 }
 .project-flex{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
 }

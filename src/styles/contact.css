@@ -1,0 +1,20 @@
+.CU-div {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.CU-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield{
+  width: auto;
+}
+.social-links{
+  margin-top: 25px;
+}
