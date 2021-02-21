@@ -2,16 +2,36 @@ import React from "react";
 import "../styles/home.css";
 import HunterImg from "../assets/HunterSLC.jpg";
 import Layout from "../components/Layout";
+import { Link } from "react-scroll";
+import ContactUsForm from "../components/ContactUsForm";
+import { GitHub, LinkedIn } from "@material-ui/icons";
+import { Button } from "@material-ui/core";
 
 const Home = () => {
   return (
     <div>
       <div className="hero-div">
-        <header className="header">
+        <header className="header" id="header">
           <h1 className="logo">HM</h1>
-          <a href="/contact" className="contact-link">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            className="contact-link"
+          >
             Contact Me
-          </a>
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={1000}
+            className="project-link"
+          >
+            My Projects
+          </Link>
+          <Link to="about" smooth={true} duration={1000} className="about-link">
+            About Me
+          </Link>
         </header>
         <div className="hero-text">
           <h1>Software Engineer, Front-end Developer</h1>
@@ -19,9 +39,9 @@ const Home = () => {
         </div>
         {/* <img className='hunter-hero' src={HunterImg} /> */}
       </div>
-      <div className="about-me-div">
+      <div className="about-me-div" id="about">
         <>
-          <h1 className="intro-h1">Hi, i'm Hunter. Nice to meet you!</h1>
+          <h1 className="intro-h1">Hi, I'm Hunter. Nice to meet you!</h1>
           <p className="intro-h1">
             For as long as I can remember I have loved to learn. Growing up I
             was thrilled to learn about absolutely anything, determined to know
@@ -53,7 +73,7 @@ const Home = () => {
         <p>Material-UI</p>
         <p>NPM</p>
       </div>
-      <div className="project-header">
+      <div className="project-header" id="projects">
         <h2>These are my recent projects!</h2>
         <p>
           To see more work send me a message from my{" "}
@@ -80,6 +100,18 @@ const Home = () => {
               MongoDB. In a git flow style we've adhered to strict React
               architecture for a clean and easy working environment.
             </p>
+            <div>
+              <Button
+                href="https://geosmin.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </Button>
+              <Button                href="https://github.com/jeri-dilts/geosmin"
+                target="_blank"
+                rel="noopener noreferrer">GitHub</Button>
+            </div>
           </a>
         </div>
         <div className="project-div">
@@ -101,6 +133,18 @@ const Home = () => {
               check out others events to see if you would be interested in going
               to their event!
             </p>
+            <div>
+              <Button
+                href="http://groupdeck.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </Button>
+              <Button                href="https://github.com/HunterMott/GroupDeck"
+                target="_blank"
+                rel="noopener noreferrer">GitHub</Button>
+            </div>
           </a>
         </div>
         <div className="project-div">
@@ -120,6 +164,18 @@ const Home = () => {
               increase efficiency and decrease time waste by allowing you to
               create a to do list or even take notes!
             </p>
+            <div>
+              <Button
+                href="https://distracted-golick-7c5f77.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </Button>
+              <Button                href="https://github.com/HunterMott/noteworthy"
+                target="_blank"
+                rel="noopener noreferrer">GitHub</Button>
+            </div>
           </a>
         </div>
         <div className="project-div">
@@ -140,10 +196,50 @@ const Home = () => {
               up to 5 days in advanced! (Weather Condition, High and low, Feels
               like, Wind speeds)
             </p>
+            <div>
+              <Button
+                href="https:huntermott.github.io/BetterWeather/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </Button>
+              <Button                href="https://github.com/HunterMott/BetterWeather"
+                target="_blank"
+                rel="noopener noreferrer">GitHub</Button>
+            </div>
           </a>
         </div>
       </div>
-      <div className="footer"></div>
+      <ContactUsForm />
+      <div className="social-links">
+        <a
+          href="https://github.com/HunterMott"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/huntermott/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedIn />
+        </a>
+      </div>
+      <a
+        href="https://drive.google.com/file/d/1PaMworqazqZXScpl3mw-xYM2phHTO6_M/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Resume
+      </a>
+      <div className="footer">
+        <Link to="header" smooth={true} duration={1000}>
+          To the top!
+        </Link>
+      </div>
     </div>
   );
 };

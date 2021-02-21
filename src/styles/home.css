@@ -20,6 +20,21 @@
   justify-self: flex-end;
   margin: 25px;
   margin-top: -45px;
+  text-decoration: none;
+}
+.project-link{
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 25px;
+  margin-top: -43px;
+  margin-right: 120px;
+}
+.about-link{
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 25px;
+  margin-top: -43px;
+  margin-right: 218px;
 }
 .hunter-hero{
   height: 200px;
@@ -99,4 +114,26 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 50px;
+}
+.footer{
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-skills {
+    margin: -30px 10vw 0 10vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .intro-h1 {
+    margin: 0;
+    width: 90%;
+    padding: 20px 5% 0 5%;
+    line-height: 1.6;
+  }
+  .project-img{
+    width: 200px;
+  }
 }

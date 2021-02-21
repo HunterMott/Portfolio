@@ -36,7 +36,13 @@ const ContactUsForm = () => {
       templateParams,
       "user_KsJqdWsEA8BMBnKesLRvn"
     )
-    .then(() => history.push("/"))
+      .then(() => history.push("/"))
+    
+    setForm({
+      from_name: '',
+      from_email: '',
+      message: ''
+    })
   };
 
   const renderError = () => {
@@ -59,7 +65,7 @@ const ContactUsForm = () => {
   const { from_name, from_email, message } = form;
 
   return (
-    <div className='CU-div'>
+    <div className='CU-div' id='contact'>
       <h1>Send me a message!</h1>
       <form className="CU-form" onSubmit={handleSubmit}>
         <TextField
