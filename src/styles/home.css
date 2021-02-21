@@ -19,7 +19,7 @@
   align-self: flex-end;
   justify-self: flex-end;
   margin: 25px;
-  margin-top: -45px;
+  margin-top: -43px;
   text-decoration: none;
 }
 .project-link{
@@ -120,7 +120,9 @@ a {
   margin-bottom: 50px;
   margin-top: 40px;
 }
-
+.project-buttons{
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 600px) {
   .tech-skills {
     margin: -30px 10vw 0 10vw;

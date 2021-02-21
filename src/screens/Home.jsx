@@ -82,12 +82,6 @@ const Home = () => {
       </div>
       <div className="project-flex">
         <div className="project-div">
-          <a
-            className="project-link"
-            href="http://https://geosmin.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <h3>Geosmin</h3>
             <img
               className="project-img"
@@ -100,7 +94,7 @@ const Home = () => {
               MongoDB. In a git flow style we've adhered to strict React
               architecture for a clean and easy working environment.
             </p>
-            <div>
+            <div className='project-buttons'>
               <Button
                 href="https://geosmin.netlify.app/"
                 target="_blank"
@@ -112,15 +106,8 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer">GitHub</Button>
             </div>
-          </a>
         </div>
         <div className="project-div">
-          <a
-            className="project-link"
-            href="http://groupdeck.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <h3>GroupDeck</h3>
             <img
               className="project-img"
@@ -133,7 +120,7 @@ const Home = () => {
               check out others events to see if you would be interested in going
               to their event!
             </p>
-            <div>
+            <div className='project-buttons'>
               <Button
                 href="http://groupdeck.netlify.app/"
                 target="_blank"
@@ -145,15 +132,8 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer">GitHub</Button>
             </div>
-          </a>
         </div>
         <div className="project-div">
-          <a
-            className="project-link"
-            href="https://distracted-golick-7c5f77.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <h3>NoteWorthy</h3>
             <img
               className="project-img"
@@ -164,7 +144,7 @@ const Home = () => {
               increase efficiency and decrease time waste by allowing you to
               create a to do list or even take notes!
             </p>
-            <div>
+            <div className='project-buttons'>
               <Button
                 href="https://distracted-golick-7c5f77.netlify.app/"
                 target="_blank"
@@ -176,15 +156,8 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer">GitHub</Button>
             </div>
-          </a>
         </div>
         <div className="project-div">
-          <a
-            className="project-link"
-            href="https:huntermott.github.io/BetterWeather/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
             <h3>BetterWeather</h3>
             <img
               className="project-img"
@@ -196,7 +169,7 @@ const Home = () => {
               up to 5 days in advanced! (Weather Condition, High and low, Feels
               like, Wind speeds)
             </p>
-            <div>
+            <div className='project-buttons'>
               <Button
                 href="https:huntermott.github.io/BetterWeather/"
                 target="_blank"
@@ -208,7 +181,6 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer">GitHub</Button>
             </div>
-          </a>
         </div>
       </div>
       <ContactUsForm />
