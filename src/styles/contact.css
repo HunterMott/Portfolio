@@ -6,16 +6,21 @@
   justify-content: center;
   margin-top: 50px;
 }
-
 .CU-form {
   display: flex;
   flex-direction: column;
-  
+  width: 50%;
 }
-
+.CU-form button{
+  margin-top: 20px;
+}
 .textfield{
   width: auto;
+  margin-bottom: 20px;
 }
 .social-links{
   margin-top: 25px;
+}
+.CU-button{
+  margin-top: 10px;
 }

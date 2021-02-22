@@ -75,7 +75,7 @@ const ContactUsForm = () => {
           value={from_name}
           className="textfield"
           label="Name"
-          variant="outlined"
+          // variant="outlined"
           type="text"
         />
         <TextField
@@ -85,7 +85,7 @@ const ContactUsForm = () => {
           value={from_email}
           className="textfield"
           label="E-mail"
-          variant="outlined"
+          // variant="outlined"
           type="text"
         />
         <TextField
@@ -96,8 +96,8 @@ const ContactUsForm = () => {
           value={message}
           className="textfield"
           label="Message"
-          rows={4}
-          variant="outlined"
+          rowsMax={4}
+          // variant="outlined"
         />
         {renderError()}
       </form>
