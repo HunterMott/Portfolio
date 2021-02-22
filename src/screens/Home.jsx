@@ -9,7 +9,7 @@ import { Button } from "@material-ui/core";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <div className="hero-div">
         <header className="header" id="header">
           <h1 className="logo">HM</h1>
@@ -77,110 +77,129 @@ const Home = () => {
         <h2>These are my recent projects!</h2>
         <p>
           To see more work send me a message from my{" "}
-          <a href="/contact">contact</a> page!
+          <Link className='contact-mini' to="contact" smooth={true} duration={1000}>
+            contact
+          </Link>{" "}
+          page!
         </p>
       </div>
       <div className="project-flex">
         <div className="project-div">
-            <h3>Geosmin</h3>
-            <img
-              className="project-img"
-              src="https://moorlandseater.com/wp-content/uploads/2019/05/red-cabbage-microgreens-moorlands-eater-DSC02617.jpg"
-            />
-            <p>
-              Geosmin is a gourmet mushroom and microgreen urban farm store.
-              This vending React App, collectively built by three team members,
-              exhibits authentication and full CRUD using Express, Mongoose, and
-              MongoDB. In a git flow style we've adhered to strict React
-              architecture for a clean and easy working environment.
-            </p>
-            <div className='project-buttons'>
-              <Button
-                href="https://geosmin.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </Button>
-              <Button                href="https://github.com/jeri-dilts/geosmin"
-                target="_blank"
-                rel="noopener noreferrer">GitHub</Button>
-            </div>
+          <h3>Geosmin</h3>
+          <img
+            className="project-img"
+            src="https://moorlandseater.com/wp-content/uploads/2019/05/red-cabbage-microgreens-moorlands-eater-DSC02617.jpg"
+          />
+          <p>
+            Geosmin is a gourmet mushroom and microgreen urban farm store. This
+            vending React App, collectively built by three team members,
+            exhibits authentication and full CRUD using Express, Mongoose, and
+            MongoDB. In a git flow style we've adhered to strict React
+            architecture for a clean and easy working environment.
+          </p>
+          <div className="project-buttons">
+            <Button
+              href="https://geosmin.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site
+            </Button>
+            <Button
+              href="https://github.com/jeri-dilts/geosmin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </Button>
+          </div>
         </div>
         <div className="project-div">
-            <h3>GroupDeck</h3>
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
-            />
-            <p>
-              GroupDeck is a web application built to help people find other
-              people with similar interests! Once you make an account you can
-              create your own event for people to see and come check out or
-              check out others events to see if you would be interested in going
-              to their event!
-            </p>
-            <div className='project-buttons'>
-              <Button
-                href="http://groupdeck.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </Button>
-              <Button                href="https://github.com/HunterMott/GroupDeck"
-                target="_blank"
-                rel="noopener noreferrer">GitHub</Button>
-            </div>
+          <h3>GroupDeck</h3>
+          <img
+            className="project-img"
+            src="https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
+          />
+          <p>
+            GroupDeck is a web application built to help people find other
+            people with similar interests! Once you make an account you can
+            create your own event for people to see and come check out or check
+            out others events to see if you would be interested in going to
+            their event!
+          </p>
+          <div className="project-buttons">
+            <Button
+              href="http://groupdeck.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site
+            </Button>
+            <Button
+              href="https://github.com/HunterMott/GroupDeck"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </Button>
+          </div>
         </div>
         <div className="project-div">
-            <h3>NoteWorthy</h3>
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
-            />
-            <p>
-              This is a simple productivity app built with react to help
-              increase efficiency and decrease time waste by allowing you to
-              create a to do list or even take notes!
-            </p>
-            <div className='project-buttons'>
-              <Button
-                href="https://distracted-golick-7c5f77.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </Button>
-              <Button                href="https://github.com/HunterMott/noteworthy"
-                target="_blank"
-                rel="noopener noreferrer">GitHub</Button>
-            </div>
+          <h3>NoteWorthy</h3>
+          <img
+            className="project-img"
+            src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
+          />
+          <p>
+            This is a simple productivity app built with react to help increase
+            efficiency and decrease time waste by allowing you to create a to do
+            list or even take notes!
+          </p>
+          <div className="project-buttons">
+            <Button
+              href="https://distracted-golick-7c5f77.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site
+            </Button>
+            <Button
+              href="https://github.com/HunterMott/noteworthy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </Button>
+          </div>
         </div>
         <div className="project-div">
-            <h3>BetterWeather</h3>
-            <img
-              className="project-img"
-              src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
-            />
-            <p>
-              This web application will take your zip code and return current
-              detailed weather information and weather updates every 3 hours for
-              up to 5 days in advanced! (Weather Condition, High and low, Feels
-              like, Wind speeds)
-            </p>
-            <div className='project-buttons'>
-              <Button
-                href="https:huntermott.github.io/BetterWeather/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Site
-              </Button>
-              <Button                href="https://github.com/HunterMott/BetterWeather"
-                target="_blank"
-                rel="noopener noreferrer">GitHub</Button>
-            </div>
+          <h3>BetterWeather</h3>
+          <img
+            className="project-img"
+            src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1"
+          />
+          <p>
+            This web application will take your zip code and return current
+            detailed weather information and weather updates every 3 hours for
+            up to 5 days in advanced! (Weather Condition, High and low, Feels
+            like, Wind speeds)
+          </p>
+          <div className="project-buttons">
+            <Button
+              href="https:huntermott.github.io/BetterWeather/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site
+            </Button>
+            <Button
+              href="https://github.com/HunterMott/BetterWeather"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </Button>
+          </div>
         </div>
       </div>
       <ContactUsForm />
@@ -212,7 +231,7 @@ const Home = () => {
           To the top!
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 
