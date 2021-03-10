@@ -42,15 +42,8 @@ const Home = () => {
       <div className="about-me-div" id="about">
         <>
           <h1 className="intro-h1">Hi, I'm Hunter. Nice to meet you!</h1>
-          <p className="intro-h1">
-            For as long as I can remember I have loved to learn. Growing up I
-            was thrilled to learn about absolutely anything, determined to know
-            how things worked and how they were built. This determination has
-            been the driving force behind becoming a software engineer. I am a
-            results-oriented professional with a proven knowledge of full stack
-            web design and problem solving. These things combined with my drive
-            to learn something new everyday has been a gratifying experience as
-            I take on new challenges.
+          <p className="intro-h1" id='intro-p'>
+          I am a software engineer with a background in sales and production management. My innate curiosity of how things work and how they are built, along with my previous experience, have been the driving force behind becoming a software engineer. I am a results-oriented professional with a proven knowledge of full stack web design and problem solving. These things combined with my drive to learn something new everyday has been a gratifying experience as I take on new challenges.
           </p>
         </>
       </div>

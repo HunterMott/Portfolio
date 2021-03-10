@@ -144,4 +144,7 @@ a {
   .project-img{
     width: 200px;
   }
+  #intro-p{
+    font-size: 14px;
+  }
 }
