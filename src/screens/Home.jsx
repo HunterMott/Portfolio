@@ -220,7 +220,7 @@ const Home = () => {
         </a>
       </div>
       <a
-        href="https://drive.google.com/file/d/1PaMworqazqZXScpl3mw-xYM2phHTO6_M/view?usp=sharing"
+        href="https://drive.google.com/file/d/1x2iMVQV6No0g87FY7lvsBrwmigMHb4rG/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
