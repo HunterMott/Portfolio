@@ -179,7 +179,7 @@ const Home = () => {
           </p>
           <div className="project-buttons">
             <Button
-              href="https:huntermott.github.io/BetterWeather/"
+              href="https://huntermott.github.io/BetterWeather/"
               target="_blank"
               rel="noopener noreferrer"
             >
